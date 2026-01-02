@@ -1,0 +1,44 @@
+Flights Dataset (flights.csv)
+Column	Description
+YEAR	Year of the flight record.
+MONTH	Month of the flight (1 = January, 12 = December).
+DAY	Day of the month (1–31).
+DAY_OF_WEEK	Day of the week (1 = Monday, 7 = Sunday).
+AIRLINE	Airline carrier code (e.g., AS = Alaska Airlines).
+FLIGHT_NUMBER	Flight number assigned by the airline.
+TAIL_NUMBER	Aircraft tail registration number (unique for each plane).
+ORIGIN_AIRPORT	IATA code of the departure airport.
+DESTINATION_AIRPORT	IATA code of the arrival airport.
+SCHEDULED_DEPARTURE	Scheduled departure time (in HHMM, local time).
+DEPARTURE_TIME	Actual departure time (in HHMM, local time).
+DEPARTURE_DELAY	Difference between scheduled and actual departure times (minutes). Negative = early, Positive = late.
+TAXI_OUT	Taxi-out time in minutes (gate to wheels-off).
+WHEELS_OFF	Time the aircraft took off (in HHMM).
+SCHEDULED_TIME	Scheduled flight duration in minutes.
+ELAPSED_TIME	Actual elapsed time from departure to arrival.
+AIR_TIME	Actual time spent in the air (minutes).
+DISTANCE	Distance between airports (miles).
+WHEELS_ON	Time the aircraft landed (HHMM).
+TAXI_IN	Taxi-in time in minutes (landing to gate).
+SCHEDULED_ARRIVAL	Scheduled arrival time (HHMM, local).
+ARRIVAL_TIME	Actual arrival time (HHMM, local).
+ARRIVAL_DELAY	Difference between scheduled and actual arrival (minutes). Negative = early, Positive = late.
+DIVERTED	1 = flight diverted to another airport, 0 = not diverted.
+CANCELLED	1 = flight cancelled, 0 = not cancelled.
+CANCELLATION_REASON	Reason for cancellation (A = Airline, B = Weather, C = NAS, D = Security).
+AIR_SYSTEM_DELAY	Delay due to air traffic control system (minutes).
+SECURITY_DELAY	Delay due to security issues (minutes).
+AIRLINE_DELAY	Delay due to airline (e.g., crew, maintenance) (minutes).
+LATE_AIRCRAFT_DELAY	Delay due to the aircraft’s late arrival from previous flight (minutes).
+WEATHER_DELAY	Delay due to weather (minutes).
+
+
+Airports Dataset (airports.csv)
+Column	Description
+IATA_CODE	Unique 3-letter airport code (e.g., JFK, LAX).
+AIRPORT	Full airport name.
+CITY	City where the airport is located.
+STATE	U.S. state abbreviation.
+COUNTRY	Country name.
+LATITUDE	Latitude coordinate of the airport.
+LONGITUDE	Longitude coordinate of the airport.
